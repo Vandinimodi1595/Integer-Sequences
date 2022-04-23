@@ -1,0 +1,11 @@
+#Fibonacci series with recursive approach using Python
+def fibonacci_recur(n):
+    assert n>=0 and int(n) == n, "n must be positive integer only"
+    if n in [0,1]:
+        return n
+    else:
+        return fibonacci_recur(n-1) + fibonacci_recur(n-2)
+    
+n = 10
+for i in range(1,n+1):
+    print(fibonacci_recur(i))
